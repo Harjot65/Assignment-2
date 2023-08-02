@@ -52,9 +52,11 @@ public class TrafficSimulationGame extends JFrame {
             JOptionPane.showMessageDialog(this, "Sorry, your guess is incorrect. The correct answer was: " + lights[currentLightIndex]);
         }
         timer.stop();
+        startButton.setEnabled(false);
     }
 
     public void startSimulation() {
+        startButton.setEnabled(true);
         timer.start();
     }
 
